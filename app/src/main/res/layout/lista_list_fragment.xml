@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/flRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lstLibros"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/lblEmptyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lista_emptyView"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/ic_add_black_24dp" />
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAddLibro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_add_white_24dp"
+                android:layout_marginEnd="@dimen/margin_main_8"
+                android:layout_marginBottom="@dimen/margin_main_8"
+                android:elevation="@dimen/margin_main_8" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rlBs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:behavior_peekHeight="0dp"
+            app:behavior_hideable="true"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <ImageView
+                android:id="@+id/imgBs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lblBsTitulo"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/lblBsTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:text="Titulo" />
+
+            <TextView
+                android:id="@+id/lblBsSinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblBsTitulo"
+                tools:text="Sinopsis Sinopsis SinopsisSinopsisSinopsisSinopsisSinopsisSinopsisSinopsisSinopsisSinopsisSinopsis"/>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="snackBarDeshacer"
+        android:title="SnackBar Deshacer"
+        android:summary="Deshacer On/Off"
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="dialogSave"
+        android:title="Dialogo"
+        android:summary="Mostrar Dialogo confirmacion"
+        android:defaultValue="true"/>
+
+</PreferenceScreen>

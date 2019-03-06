@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    app:startDestination="@id/listaFragment">
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.example.rnv_examenandroid2evalu.ui.ListaFragment"
+        android:label="ListaFragment" >
+        <action
+            android:id="@+id/action_listaFragment_to_agregarFragment"
+            app:destination="@id/agregarFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_preferenceFragment"
+            app:destination="@id/preferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarFragment"
+        android:name="com.example.rnv_examenandroid2evalu.ui.agregarFragment.AgregarFragment"
+        android:label="AgregarFragment" />
+    <fragment
+        android:id="@+id/preferenceFragment"
+        android:name="com.example.rnv_examenandroid2evalu.ui.preferenciasFragment.PreferenceFragment"
+        android:label="PreferenceFragment" />
+</navigation>

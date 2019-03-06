@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RNV-ExamenAndroid2Evalu</string>
+    <string name="txt_lista_emptyView">Anhadir Libro</string>
+    <string name="txt_titulo_agregar">Titulo</string>
+    <string name="txt_autor_agregar">Autor/a</string>
+    <string name="txt_anio_agregar">Año de publicacion</string>
+    <string name="txt_url_agregar">URL Portada</string>
+    <string name="txt_sinopsis_agregar">Sinopsis</string>
+    <string name="msgError_main_form">Campo requerido</string>
+    <string name="msg_error_agregar">Error, Comprueba los campos</string>
+    <string name="msg_success_agregar">Guardado satisfactoriamente</string>
+    <string name="msg_sinopsis_bt"><![CDATA[<Sinopsis no disponible>]]></string>
+    <string name="deshacer">deshacer</string>
+    <string name="main_fragment_confirm_deletion">Confirmacion de guardado</string>
+    <string name="main_fragment_sure">¿Estas seguro que quieres guardalo?</string>
+    <string name="main_fragment_yes">Si</string>
+    <string name="main_fragment_no">No</string>
+    <string name="lbl_mnu_listFragment">Ajustes</string>
+</resources>
